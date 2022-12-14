@@ -53,39 +53,38 @@
             <img src="img/scorchers.svg" width=72px>
         </div>
 
-        <?php /*
+        <?php
             require 'vendor/autoload.php';
             $httpClient = new \GuzzleHttp\Client(['headers' => ['Referer' => 'https://duckduckgo.com/', 'User-Agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:95.0) Gecko/20100101 Firefox/95.0']]);
 
-            libxml_use_internal_errors(true);
+            // libxml_use_internal_errors(true);
         
-            $response = $httpClient->get('https://www.espncricinfo.com/live-cricket-score');
-            $htmlString = (string) $response->getBody();
-            $doc = new DOMDocument();
-            $doc->loadHTML($htmlString);
-            $xpath = new DOMXPath($doc);
-            $live_scores = $xpath->evaluate('//div[@class="match-score-block"]/div[2]');
-            echo "<table>";
-            echo "<td>";
-            $score_html = $doc->saveHTML($live_scores->item(0));
-            $score_html = preg_replace('/<img [^<]*/', '', $score_html);   // Test regex expressions using https://www.phpliveregex.com
-            $score_html = preg_replace('/ href=".*"/U', '', $score_html);  // U modifier ensures non-greedy matching
-            echo $score_html;
-            echo "</td>";
-            echo "<td>";
-            $score_html = $doc->saveHTML($live_scores->item(1));
-            $score_html = preg_replace('/<img [^<]*/', '', $score_html);
-            $score_html = preg_replace('/ href=".*"/U', '', $score_html);
-            echo $score_html;
-            echo "</td>";
-            echo "<td>";
-            $score_html = $doc->saveHTML($live_scores->item(2));
-            $score_html = preg_replace('/<img [^<]*/', '', $score_html);
-            $score_html = preg_replace('/ href=".*"/U', '', $score_html);
-            echo $score_html;
-            echo "</td>";
-            echo "</table>";
-            */
+            // $response = $httpClient->get('https://www.espncricinfo.com/live-cricket-score');
+            // $htmlString = (string) $response->getBody();
+            // $doc = new DOMDocument();
+            // $doc->loadHTML($htmlString);
+            // $xpath = new DOMXPath($doc);
+            // $live_scores = $xpath->evaluate('//div[@class="match-score-block"]/div[2]');
+            // echo "<table>";
+            // echo "<td>";
+            // $score_html = $doc->saveHTML($live_scores->item(0));
+            // $score_html = preg_replace('/<img [^<]*/', '', $score_html);   // Test regex expressions using https://www.phpliveregex.com
+            // $score_html = preg_replace('/ href=".*"/U', '', $score_html);  // U modifier ensures non-greedy matching
+            // echo $score_html;
+            // echo "</td>";
+            // echo "<td>";
+            // $score_html = $doc->saveHTML($live_scores->item(1));
+            // $score_html = preg_replace('/<img [^<]*/', '', $score_html);
+            // $score_html = preg_replace('/ href=".*"/U', '', $score_html);
+            // echo $score_html;
+            // echo "</td>";
+            // echo "<td>";
+            // $score_html = $doc->saveHTML($live_scores->item(2));
+            // $score_html = preg_replace('/<img [^<]*/', '', $score_html);
+            // $score_html = preg_replace('/ href=".*"/U', '', $score_html);
+            // echo $score_html;
+            // echo "</td>";
+            // echo "</table>";
         ?>
 
         <h1> BBL Stats 2021/2022 </h1>
