@@ -53,7 +53,7 @@
             <img src="img/scorchers.svg" width=72px>
         </div>
 
-        <?php
+        <?php /*
             require 'vendor/autoload.php';
             $httpClient = new \GuzzleHttp\Client(['headers' => ['Referer' => 'https://duckduckgo.com/', 'User-Agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:95.0) Gecko/20100101 Firefox/95.0']]);
 
@@ -85,6 +85,7 @@
             echo $score_html;
             echo "</td>";
             echo "</table>";
+            */
         ?>
 
         <h1> BBL Stats 2021/2022 </h1>
@@ -93,6 +94,7 @@
 
         <table>
             <?php
+            /*
                 $response = $httpClient->get('https://www.espncricinfo.com/series/big-bash-league-2021-22-1269637/points-table-standings');
                 $htmlString = (string) $response->getBody();
 
@@ -144,6 +146,7 @@
                     echo "</b></td>";
                     echo "</tr>";
                 }
+                */
             ?>
         </table>
         </div>
