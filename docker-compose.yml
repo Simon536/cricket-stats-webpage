@@ -6,7 +6,7 @@ services:
     build:
       context: ./build
       dockerfile: Dockerfile
-    image: cricket-server:0.1
+    image: cricket-server:0.2
     ports:
       - "8081:80/tcp"
     restart: unless-stopped
